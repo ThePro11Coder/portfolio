@@ -1,9 +1,8 @@
 #home{
-  background-image: url('images/trees.jpg');
+  background-image: url('images/forest.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.7;
 }
 .title-part2 {
   font-size: 350%;
