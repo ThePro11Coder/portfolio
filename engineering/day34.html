@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day34.css" type="text/css" />
+    </head>
+    <body>
+        <div class="gamebox">
+            <h1>Giants, Wizards, Elves</h1>
+            <h2>Giants beat Elves, Elves beat Wizards, and Wizards beat Giants</h2>
+            <h3>Select your move:</h3>
+            <div class="usercontainer">
+                <a href="#">
+                    <image id="giants" src="Images/giant.jpeg">
+                    <image id="wizards" src="Images/wizard.png">
+                    <image id="elves" src="Images/elves.png" style="height:280px;width:230px;">
+                </a>
+            </div>
+            <div class="computeranswer">
+                <h3>Computer choice:</h3>
+                <p id="playerResult"></p>
+                <p id="compResult"></p>
+                <p id="winner"></p>
+            </div>
+            <table>
+                <tr>
+                    <th colspan="2">Scoreboard</th>
+                </tr>
+                <tr>
+                    <td>Player</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td id="playerScore">0</td>
+                    <td id="compScore">0</td>
+                </tr>
+            </table>
+            <button id="reset">Reset</button>
+        </div>
+        <script type="text/javascript" src="day34.js"></script>
+    </body>
+</html>

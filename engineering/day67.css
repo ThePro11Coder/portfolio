@@ -1,0 +1,25 @@
+.container {
+  height: 900px;
+  overflow-y: scroll;
+}
+
+header {
+  background-color: blue;
+  width: 100%;
+
+  position: fixed;
+}
+
+h1 {
+  font-size: 22px;
+  color: white;
+}
+
+header.shrink {
+  height: 50px;
+  background-color: red;
+}
+
+h1.shrink {
+  font-size: 14px;
+}s

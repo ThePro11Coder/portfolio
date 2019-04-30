@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet">
+    <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body id="top">
+    <div class="page">
+      <div class="page-content">
+        <section>
+            <script>
+              function openSlideMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+              }
+              function closeSlideMenu(){
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+              }
+            </script>
+            <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div id="content">
+                                <span class="slide">
+                                    <a href="#" onclick="openSlideMenu()" style="color:white">
+                                        <i class="fas fa-bars "></i>
+                                    </a>
+                                </span>
+                                <div id="menu" class="nav1">
+                                    <a href="#" class="close" onclick="closeSlideMenu()">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="index.html">Home</a>
+                                    <a href="Last_AboutMe.html">About Me</a>
+                                    <a href="resume.html">Resume</a>
+                                    <a href="Projects.html">Projects</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="360days.html">360 Day Challenge</a>
+                                    <a href="Photo Gallery.html">Photo Gallery</a>
+                                    <a href="Contact_me.html">Contact Me</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <h3 style="color:white;">
+                            Mukul's Engineering Portfolio
+                        </h3>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" style="color:white;">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p style="color:rgba(0,0,0,0)">
+                                ls
+                            <p>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ThePro11Coder" style="color:white;">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+            <script src="navbar.js"></script>
+        </section>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+<div class="container px-0 py-4">
+  <div class="pp-category-filter">
+    <div class="row">
+      <div class="col-sm-12"><a style="color:black;" class="btn btn-primary pp-filter-button" href="#" data-filter="all">All</a><a style="color:black;" class="btn btn-outline-primary pp-filter-button" href="#" data-filter="2019">2019</a><a style="color:black;" class="btn btn-outline-primary pp-filter-button" href="#" data-filter="2018">2018</a><a style="color:black;" class="btn btn-outline-primary pp-filter-button" href="#" data-filter="2017">2017</a><a style="color:black;" class="btn btn-outline-primary pp-filter-button" href="#" data-filter="2016">2016</a></div>
+    </div>
+  </div>
+</div>
+<div class="container px-0">
+  <div class="pp-gallery">
+    <div class="card-columns" >
+      <div class="card" data-groups="[2018]" style="border:white;">
+          <figure class="pp-effect">
+              <p style="text-align:center">
+              <img class="img-fluid" style="height:277px;width:290px;" src="Images/summer_teaching.jpg" alt="Summer Teaching"/>
+              </p>
+            <figcaption style="text-align:center">
+              <p> Mukul Teaching App Dev to kids (summer 2018)</p>
+            </figcaption>
+          </figure></div>
+      <div class="card" data-groups="[2018]" style="border:white;">
+          <figure class="pp-effect">
+              <p style="text-align:center">
+                <img class="img-fluid" style="height:277px;width:290px;" src="Images/mukulRobcomp.png" alt="Stem4Bots competiton"/>
+              </p>
+            <figcaption style="text-align:center">
+              <p>Mukul Winning 1st Place at Stem4Bots Robotics Tournament (December 2018)</p>
+            </figcaption>
+          </figure></div>
+      <div class="card" data-groups="[2016]" style="border:white;">
+          <figure class="pp-effect">
+              <p style="text-align:center">
+                <img class="img-fluid" style="height:277px;width:290px;" src="Images/newsletter.jpg" alt="4-H"/>
+              </p>
+            <figcaption style="text-align:center">
+              <p>Mukul (Right) heading to 4-H state Presentation day with his friends after winning gold award at Regionals</p>
+            </figcaption>
+          </figure></div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="photogallery.js"></script>
+  </body>
+</html>

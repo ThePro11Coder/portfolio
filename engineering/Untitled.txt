@@ -1,0 +1,39 @@
+<div class="container" > <!--add or remove container class - temporary modification-->
+            <div class="row">
+                 <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1500"> <!--cards only take up half the screen regardless of amount of text-->
+                    <div class="card flex-sm-row">
+                        <div class="card-body">
+                            <strong>
+                            <h6>Projects</h6> <!--different parts of the card have different sizes for readability-->
+                            <h4>State Geography Quiz</h4>
+                            <h5>9/18/2018 - 10/11/2018</h5>
+                            </strong>
+                            <p>The Objective of this project was to create an interactive capitals and states quiz for kids to study for their...</p>
+                            <a href="Projects.html"  class="btn btn-primary">Explore this project</a> <!--button linked to projects page-->
+                        </div>
+                        <img src="Images/Capture.PNG" class="card-img-right flex-sm-row" style='max-width:400px; max-height:250px'><!--images on cards
+                        have max on dimensions to prevent stretching-->
+                        <a href="Projects.html" class="stretched-link"></a>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card flex-sm-row"> <!--ensures the width is flexible on different sized screens-->
+                        <div class="card-body"> <!--main card content starts-->
+                            <strong>
+                            <h6>Highlights</h6>
+                            <h4>About me</h4>
+                            <h5>12/30/2018</h5>
+                            </strong>
+                            <p>There are many things a lot of us hope to accomplish in our lifetime. My life goals include...</p>
+                            <a href="Last_AboutMe.html" class="btn btn-primary">Explore my Bio</a> <!--small change, button instead of link-->
+                        </div>
+                        <img src="Images/mukul2.png" class="card-img-right flex-sm-row" style='max-width:220px; max-height:180px'>
+                        <!--images on cards
+                        have max on dimensions to prevent stretching-->
+                        <a href="Last_AboutMe.html" class="stretched-link"></a>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>

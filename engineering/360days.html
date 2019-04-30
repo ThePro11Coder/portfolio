@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="animate.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+    <body id="three">
+    <script>
+        AOS.init({
+            once:true
+        });
+      </script>
+<section>
+            <script>
+              function openSlideMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+              }
+              function closeSlideMenu(){
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+              }
+            </script>
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div id="content">
+                                <span class="slide">
+                                    <a href="#" onclick="openSlideMenu()">
+                                        <i class="fas fa-bars "></i>
+                                    </a>
+                                </span>
+                                <div id="menu" class="nav1">
+                                    <a href="#" class="close" onclick="closeSlideMenu()">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="index.html">Home</a>
+                                    <a href="Last_AboutMe.html">About Me</a>
+                                    <a href="resume.html">Resume</a>
+                                    <a href="Projects.html">Projects</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="360days.html">360 Day Challenge</a>
+                                    <a href="Photo Gallery.html">Photo Gallery</a>
+                                    <a href="Contact_me.html">Contact Me</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <h3 style="color:white;">
+                            Mukul's Engineering Portfolio
+                        </h3>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" style="color:white;">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p style="color:rgba(0,0,0,0)">
+                                ls
+                            <p>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ThePro11Coder" style="color:white;">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+            <script src="navbar.js"></script>
+        </section>
+        <section class="container title-part2">
+            <h1 id="title"></h1>
+        </section>
+        <script>
+            var i = 0;
+            var txt = '360 Day Challenge'; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <section class="aboutme" style="padding-top: 5%">
+            <jumbotron>
+                <h3 style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    About This Challenge:
+                </h3>
+                <p style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    In this challenge I will create a small code snipet everyday
+                    for 360 days until Febuary 14, 2020. The Point of this challenge
+                    is for me to learn more advanced Javascript. This challenge is inspired
+                    by the 180 day challenge which went viral 3 years ago. I will begin
+                    today Febuary 14, 2019 and end on Febuary 14, 2020.
+                </p>
+            </jumbotron>
+        </section>
+        <section class="section" style="padding-top: 5%">
+            <table class="table" data-aos="fade-up" data-aos-duration="1500">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Program name</th>
+                        <th scope="col">Theme</th>
+                        <th scope="col">Link to Program</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color:white;">
+                    <tr>
+                      <th scope="row">February 14, 2019</th>
+                      <td>LightBulb Switch</td>
+                      <td>LightBulb</td>
+                      <td>
+                          <a href="day1.html">LightBulb Switch</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 15, 2019</th>
+                      <td>LightBulb Switch w/ background color change</td>
+                      <td>LightBulb</td>
+                      <td>
+                          <a href="day2.html">Color Change</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 16, 2019</th>
+                      <td>Multiplication Table Generator</td>
+                      <td>Text Input with mathematics</td>
+                      <td>
+                          <a href="day3.html">Table Generator</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 17, 2019</th>
+                      <td>Text Input Calculator</td>
+                      <td>Text Input with mathematics</td>
+                      <td>
+                          <a href="day4.html">Text Input Calculator</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 18, 2019</th>
+                      <td>Celcius to Farenheit Calculator and Vice-Versa</td>
+                      <td>Unit Conversions</td>
+                      <td>
+                          <a href="day5.html">Celcius and Farenheit</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 19, 2019</th>
+                      <td>Feet to Meters Calculator and Vice-Versa</td>
+                      <td>Unit Conversions</td>
+                      <td>
+                          <a href="day6.html">Feet to Meters</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 20, 2019</th>
+                      <td>Kilometers to Miles and Vice-Versa</td>
+                      <td>Unit Conversions</td>
+                      <td>
+                          <a href="day7.html">Kilometers to Miles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 21, 2019</th>
+                      <td>Rolling Dice</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day8.html">Dice</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 22, 2019</th>
+                      <td>Bouncing Ball Particle Effects</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day9.html">Particles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 23, 2019</th>
+                      <td>Clouds in the Sky</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day10.html">Clouds</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 24, 2019</th>
+                      <td>Automatic Fireworks</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day11.html">Fireworks</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">February 25, 2019</th>
+                      <td>1977 Star Wars Intro</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day12.html">Star Wars</a>
+                      </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">February 26, 2019</th>
+                      <td>Waves</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day13.html">Waves</a>
+                      </td>
+                    </tr>
+                    <th scope="row">February 27, 2019</th>
+                      <td>Animate Your Name!!!</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day14.html">Name</a>
+                      </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">February 28, 2019</th>
+                      <td>DNA Helix Animation</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day15.html">DNA</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 1, 2019</th>
+                      <td>Snow Fall</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day16.html">snow</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 2, 2019</th>
+                      <td>Its A Rainy Day</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day17.html">Rain</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 3, 2019</th>
+                      <td>Random Background Color Change Button</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day18.html">Color Change</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 4, 2019</th>
+                      <td>Drawing App pt.1</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day19.html">draw1</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 5, 2019</th>
+                      <td>Drawing App pt.2</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day20.html">draw2</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 6, 2019</th>
+                      <td>Doodle-ly Version 1.0</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day21.html">Doodle-ly-1</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 7, 2019</th>
+                      <td>Doodle-ly Version 2.0</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day22.html">Doodle-ly-2</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 8, 2019</th>
+                      <td>Background Color Picker Prototype</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day23.html">Color Picker</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 9, 2019</th>
+                      <td>Doodle-ly Version 3.0</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day24.html">Doodle-ly-3</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 10, 2019</th>
+                      <td>Doodle-ly Final</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day25.html">Doodle-ly-4</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 11, 2019</th>
+                      <td>Basic Stop-Watch</td>
+                      <td>Basic User Interface Applicaions</td>
+                      <td>
+                          <a href="day26.html">Stop-Watch</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 12, 2019</th>
+                      <td>Digital-Clock</td>
+                      <td>Essential tools</td>
+                      <td>
+                          <a href="day27.html">Clock</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 13, 2019</th>
+                      <td>Analog-Clock</td>
+                      <td>Essential tools</td>
+                      <td>
+                          <a href="day28.html">Clock</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 14, 2019</th>
+                      <td>Calculator-App</td>
+                      <td>Essential tools</td>
+                      <td>
+                          <a href="day29.html">Calculator</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 15, 2019</th>
+                      <td>1-Month!!!</td>
+                      <td>Special</td>
+                      <td>
+                          <a href="day30.html">1-month</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 16, 2019</th>
+                      <td>Pop em Bubbles</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day31.html">pop bubbles</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 17, 2019</th>
+                      <td>Break the bricks!!!</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day32.html">break bricks</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 18, 2019</th>
+                      <td>Find the Matching Card</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day33.html">Matching Card</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 19, 2019</th>
+                      <td>Giants, Wizards, and Elves</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day34.html">GWE Game</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 20, 2019</th>
+                      <td>Bouncing Ball</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day35.html">Bounce Ball</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 21, 2019</th>
+                      <td>Rain Cloud</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day36.html">Rain Cloud</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 22, 2019</th>
+                      <td>Obstacle game p1</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day37.html">game pt1</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 23, 2019</th>
+                      <td>Obstacle game p2</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day38.html">game pt2</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 24, 2019</th>
+                      <td>Obstacle game p3</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day39.html">game pt3</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 25, 2019</th>
+                      <td>Obstacle game p4</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day40.html">game pt4</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 26, 2019</th>
+                      <td>Obstacle game p5</td>
+                      <td>game</td>
+                      <td>
+                          <a href="day41.html">game pt5</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 27, 2019</th>
+                      <td>Scientific Calculator</td>
+                      <td>tool</td>
+                      <td>
+                          <a href="day42.html">Scientific Calculator</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 28, 2019</th>
+                      <td>Text Editor</td>
+                      <td>tool</td>
+                      <td>
+                          <a href="day43.html">text editor</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 29, 2019</th>
+                      <td>Lava</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day44.html">Lava</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 30, 2019</th>
+                      <td>LingHacks Hackathon</td>
+                      <td>Hackathon</td>
+                      <td>
+                          <a href="https://github.com/ThePro11Coder/LingHacks2019">Hackathon</a>
+                      </td>
+                    </tr>
+                    <th scope="row">March 31, 2019</th>
+                      <td>LingHacks Hackathon</td>
+                      <td>Hackathon</td>
+                      <td>
+                          <a href="https://github.com/ThePro11Coder/LingHacks2019">Hackathon</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 1, 2019</th>
+                      <td>Text --> Speech</td>
+                      <td>Tools</td>
+                      <td>
+                          <a href="day45.html">Text --> speech</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 2, 2019</th>
+                      <td>Youtube Video Alarm</td>
+                      <td>Tools</td>
+                      <td>
+                          <a href="day46.html">Alarm</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 3, 2019</th>
+                      <td>Space Warp Animation</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day47.html">Space Warp</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 4, 2019</th>
+                      <td>A Fair's Spin the Wheel of Prizes</td>
+                      <td>Tools</td>
+                      <td>
+                          <a href="day48.html">Spin the wheel</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 5, 2019</th>
+                      <td>Turn on and off a Laptop - Visual Representation</td>
+                      <td>UI Interactions</td>
+                      <td>
+                          <a href="day49.html">Laptop</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 6, 2019</th>
+                      <td>Day50!!!</td>
+                      <td>Special</td>
+                      <td>
+                          <a href="day50.html">Day50</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 7, 2019</th>
+                      <td>Dragging a ball</td>
+                      <td>UI Interactions</td>
+                      <td>
+                          <a href="day51.html">ball</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 8, 2019</th>
+                      <td>Animated US Map Of Some Major Citties</td>
+                      <td>Maps</td>
+                      <td>
+                          <a href="day52.html">Animated US Map</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 9, 2019</th>
+                      <td>Get your location</td>
+                      <td>Maps</td>
+                      <td>
+                          <a href="day53.html">Location</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 10, 2019</th>
+                      <td>In honor of a new Black hole discovery: Black Hole Animation</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day54.html">Black Hole</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 11, 2019</th>
+                      <td>Shooting Stars</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day55.html">Shooting Stars</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 12, 2019</th>
+                      <td>Radar</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day56.html">Radar</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 13, 2019</th>
+                      <td>Minecraft Home Screen</td>
+                      <td>Interactive UI</td>
+                      <td>
+                          <a href="day57.html">Minecraft</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 14, 2019</th>
+                      <td>Night Sky</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day58.html">Night</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 15, 2019</th>
+                      <td>Sunrise</td>
+                      <td>Animations</td>
+                      <td>
+                          <a href="day59.html">Sunrise</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 16, 2019</th>
+                      <td>2 Months!!!</td>
+                      <td>Special</td>
+                      <td>
+                          <a href="day60.html">2 Months!!!</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 17, 2019</th>
+                      <td>Side-Navbar Dropdown Prototype</td>
+                      <td>UI</td>
+                      <td>
+                          <a href="day61.html">Side-Navbar</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 18, 2019</th>
+                      <td>Click-speed test</td>
+                      <td>UI</td>
+                      <td>
+                          <a href="day62.html">Click Speed</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 19, 2019</th>
+                      <td>Lighting Animation</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day63.html">Lightning</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 20, 2019</th>
+                      <td>RoboRave Tournament</td>
+                      <td>RoboRave Tournament</td>
+                      <td>
+                          <a href="https://github.com/ThePro11Coder/RoboRave">RoboRave Tournament</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 21, 2019</th>
+                      <td>Sun Rays</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day64.html">Sun Rays</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 22, 2019</th>
+                      <td>UFO</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day65.html">UFO</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 23, 2019</th>
+                      <td>Fast Background Color Change Animation</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day66.html">Background Color</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 24, 2019</th>
+                      <td>Navbar Animation</td>
+                      <td>UI</td>
+                      <td>
+                          <a href="day67.html">Navbar Animation</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 25, 2019</th>
+                      <td>Navbar Shrinking Animation</td>
+                      <td>UI</td>
+                      <td>
+                          <a href="day68.html">Navbar Animation</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 26, 2019</th>
+                      <td>Send Button Animation</td>
+                      <td>UI</td>
+                      <td>
+                          <a href="day69.html">Button Animation</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 27, 2019</th>
+                      <td>CollegeMatch</td>
+                      <td>Hackathon</td>
+                      <td>
+                          <a href="http://collegematch.tech/">CollegeMatch</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 28, 2019</th>
+                      <td>CollegeMatch</td>
+                      <td>Hackathon</td>
+                      <td>
+                          <a href="http://collegematch.tech/">CollegeMatch</a>
+                      </td>
+                    </tr>
+                    <th scope="row">April 29, 2019</th>
+                      <td>Rubic's Cube</td>
+                      <td>Animation</td>
+                      <td>
+                          <a href="day70.html">Rubic's Cube</a>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        <footer class="mainfooter">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/>
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

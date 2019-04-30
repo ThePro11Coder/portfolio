@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="animate.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="animate.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    </head>
+    <body id="ContactMe">
+    <script>
+        AOS.init({
+            once:true
+        });
+     </script>
+         <section>
+            <script>
+              function openSlideMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+              }
+              function closeSlideMenu(){
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+              }
+            </script>
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div id="content">
+                                <span class="slide">
+                                    <a href="#" onclick="openSlideMenu()">
+                                        <i class="fas fa-bars "></i>
+                                    </a>
+                                </span>
+                                <div id="menu" class="nav1">
+                                    <a href="#" class="close" onclick="closeSlideMenu()">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="index.html">Home</a>
+                                    <a href="Last_AboutMe.html">About Me</a>
+                                    <a href="resume.html">Resume</a>
+                                    <a href="Projects.html">Projects</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="360days.html">360 Day Challenge</a>
+                                    <a href="Photo Gallery.html">Photo Gallery</a>
+                                    <a href="Contact_me.html">Contact Me</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <h3 style="color:white;">
+                            Mukul's Engineering Portfolio
+                        </h3>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" style="color:white;">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p style="color:rgba(0,0,0,0)">
+                                ls
+                            <p>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ThePro11Coder" style="color:white;">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+            <script src="navbar.js"></script>
+        </section>
+        <section class="container title-part1">
+            <h1 id="title">
+            </h1>
+        </section>
+        <script>
+            var i = 0;
+            var txt = "Contact Me"; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <section class="aboutme" style="padding-top: 5%">
+            <h1 id="title">
+            </h1>
+            <div>
+            <p style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50499.44384263969!2d-121.94692646447866!3d37.71462532280807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe65cd6892231%3A0x3b327c848ef64057!2sDublin%2C+CA+94568!5e0!3m2!1sen!2sus!4v1550114554004" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+                <h3 style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    Mukul Natarajan:
+                </h3>
+                <h4 style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    <a href = "mailto:mukuln416@gmail.com">
+                     mukuln416@gmail.com
+                    </a>
+                </h4>
+                <h4 style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    Dublin, CA
+                </h4>
+            </div>
+        </section>
+
+        <footer class="mainfooter">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/>
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

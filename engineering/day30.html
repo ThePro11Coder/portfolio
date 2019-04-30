@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="day30.css" type="text/css" />
+        <script type="text/javascript" src="day30.js"></script>
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="gradient">
+        <section>  
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+        <div id="particles-js"></div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript" src="day30(2).js"></script>
+        <section class="day30">
+            <h1 id="30"></h1>
+        </section>
+        <script>
+            var i = 0;
+            var txt = 'One Month!!!'; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("30").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <div id="particles-js"></div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript" src="day30(2).js"></script>
+    </body>
+</html>

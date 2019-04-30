@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="animate.css" rel="stylesheet" type="text/css">
+                <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+        <style>
+            .blend1{
+                background-image: -webkit-linear-gradient(0deg, #6600FF 0%, #00E6FF 100%);
+            }
+        </style>
+        <script>
+            function fun1()
+            {
+                var celcius=Number(document.getElementById("cel").value);
+                var farenheit=1.8*celcius+32;
+                document.getElementById("far").value=farenheit;
+            }
+
+            function fun2()
+            {
+            var farenheit=Number(document.getElementById("far").value);
+            var celcius=(5*farenheit-160)/9;
+            document.getElementById("cel").value=celcius;
+            }
+        </script>
+    </head>
+    <body class="blend1">
+        <section>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                                                            <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+        <section>
+            <h2 class="top" style="text-align:center;color:white;">Converts Celcius to Farenheit and Farenheit to Celcius</h2>
+            <h3 style="text-align:center;color:white;">
+                To convert to Farenheit please type in the 'Celcius' box
+            </h3>
+            <h3 style="text-align:center;color:white;">
+                To convert to Celcius please type in the 'Farenheit' box
+            </h3>
+            <hr>
+            <h3>
+                <p style = "text-align:center;color:white;">     
+                CELCIUS
+                <input type="text" id ="cel" onkeyup="fun1()">
+                &nbsp&nbsp FARENHEIT 
+                <input type="text" id="far" onkeyup="fun2()">
+                </p>
+            </h3>
+        </section>
+        <footer class="mainfooter" style="margin-top: 40%;">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/> 
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

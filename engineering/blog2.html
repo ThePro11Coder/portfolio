@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    </head>
+    <body id="blog">
+        <script>
+            AOS.init({
+                once:true
+            });
+        </script>  
+        <section>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                                                            <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+        <section class="mytabs_area p_120">
+            <div class="card col-6 border main-card" style="margin-left: 25%; margin-right: 50%; padding: 5%">
+                <div class="row justify-content-between">
+                    <div class="card-body col-12">
+                        <h1 class="card-title" style="text-align:center;" >Writing in Firebase</h5>
+                        <h5 style="text-align:center;">2/20/2019</h5>
+                        <p style="text-align:left;">
+                        Today is February 20, 2019. I have done a lot in the past few days and today's
+                        write-up won't be simply about what I've done to this website. I will teach all
+                        of you today about the basics on how to use Firebase.
+                        </p>
+                        <h3 style="text-align:left;">
+                            Overview of Firebase:
+                        </h3>
+                        <p style="text-align:left;">
+                            Firebase is essentially a database that is centered in the cloud. It is 
+                            a database owned and operated by Google. Firebase is mainly used on applications
+                            that on mobile or on a computer for storing global user information. This information
+                            could be for authentication while signing in to an application or it could be local app data 
+                            which is secured in the cloud. There are many features on Firebase for your applications such as
+                            holding App data through JSON files, Authentication database for signing on your apps for security,
+                            Analytics, and Text Message storing (used by Whatsapp to keep messages sent by users).
+                        </p>
+                        <h4 style="text-align:left;">What I will teach you today:</h4>
+                        <p style="text-align:left;">
+                        Today I will be be going over how you can store TextBoxUI data in Firebase with IOS App Development(Swift).
+                        </p>
+                        <h4 style="text-align:left;">
+                        Step 1:   
+                        </h4>
+                        <p style="text-align:left;">
+                            First Set up Firebase project on their website. Website will be linked in
+                            rescources below at bottom of the page. Firebase will give you instructions on installing
+                            Firebase to IOS project once you initialize Firebase Project
+                        </p>
+                        <h4 style="text-align:left;">
+                         Step 2:   
+                        </h4>
+                        <p style="text-align:left;">
+                           Once Installed you need to go back to IOS project Folder. You need to open the file that has
+                           extension .xcworkspace, because that is where Firebase is installed. 
+                        </p>
+                        <h4 style="text-align:left;">
+                         Step 3:   
+                        </h4>
+                        <p style="text-align:left;">
+                            Assuming you have already dragged the text-boxes onto the View and and linked
+                            them onto ViewController.swift then you need to create a funntion that calls Firebase
+                            on ViewController.swift
+                        </p>
+                        <h4 style="text-align:left;">
+                            Create these variables and make them global and also Import FirebaseDatabase:
+                        </h4>
+                        <code>
+                           <pre>
+    var ref: DatabaseReference!
+    var db : Database!
+                           </pre>
+                        </code>
+                        <h4 style="text-align:left;">
+                            Call the Firebase database to our code inside viewDidLoad() function so that
+                        the realtime database becomes active while in the app:
+                        </h4>
+                        <code>
+                           <pre>
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        ref = Database.database().reference()
+        db = Database.database()
+        }
+                           </pre>
+                        </code> 
+                        <h4 style="text-align:left;">
+                            Now you need to call delegate method to your TextUIs and set your text values to self
+                            because be can globally call each one while writing into realtime database.
+                        </h4>
+                        <code>
+                           <pre>
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        ref = Database.database().reference()
+        db = Database.database()
+        
+        
+        WhatYouPut.delegate = self
+        WhatYouPut.delegate = self
+        WhatYouPut.delegate = self
+        WhatYouPut.delegate = self
+        WhatYouPut.delegate = self
+        
+        }
+                           </pre>
+                        </code> 
+                        <h4 style="text-align:left;">
+                            Now we need to drag a button in as an action for sumbiting our text UIs to Firebase:
+                        </h4>
+                        <code>
+                           <pre>
+    @IBAction func Sumbit(_ sender: Any) {
+        
+    }
+                           </pre>
+                        </code>
+                        <h4 style="text-align:left;">
+                            Transfering Data to Firebase
+                        </h4>
+                        <p>
+                            Now is where it gets tricky. For sending only one TextUI to Firebase
+                            you need can set the value but for multiple or one data you need to set and ID
+                            for each entry. For this I set the Full name of the person in the form as my ID
+                            because it is unique so you need to think of one as well. In case you don't understand
+                            the code below, it basically is just setting up the JSON tree in Firebase database. So basically
+                            In my example I am creating a main branh called Registration where my ID = "FullName" is
+                            the child of Registration and then all my TextUI values become childs of "FullName" and so this
+                            way with a ID we can keep writing in our TextUI values without overwriting any other data stored
+                            in the Registration braanch
+                        </p>
+                        <code>
+                           <pre>
+    @IBAction func Sumbit(_ sender: Any) {
+        ref.child("Registration").child(FullName.text!).child("Full Name").setValue(FullName.text)
+        ref.child("Registration").child(FullName.text!).child("Did Parent Come?").setValue(Did_Parent_Come.text)
+        ref.child("Registration").child(FullName.text!).child("Did you wear Uniform?").setValue(Uniform_worn.text)
+        ref.child("Registration").child(FullName.text!).child("Phone Number").setValue(Phone_num.text)
+        ref.child("Registration").child(FullName.text!).child("Email").setValue(email.text)
+        
+    }
+                           </pre>
+                        </code>
+                        <h5>
+                            Now we have set up Firebase enviorment to write into Firebase in our Swift program. Its up to you
+                            to add on to this. I hope you have found this somewhat useful to aid yourself in configuring Firebase
+                            on you IOS App. Firebase can also be used in Java and other languages.
+                            I will link the helpful materials below.
+                        </h5>
+                        <h3>
+                           Resources: 
+                        </h3>
+                        <p>
+                            <a href = "https://firebase.google.com">
+                                https://firebase.google.com/
+                            </a>
+                            <a href = "https://firebase.google.com/docs/database/ios/structure-data">
+                                https://firebase.google.com/docs/database/ios/structure-data
+                            </a>
+                            <a href = "https://firebase.google.com/docs/database/ios/read-and-write">
+                                https://firebase.google.com/docs/database/ios/read-and-write
+                            </a>
+                             <a href = "https://www.youtube.com/user/CodeWithChris">
+                                https://www.youtube.com/user/CodeWithChris
+                            </a>                           
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <footer class="mainfooter">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/> 
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

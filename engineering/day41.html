@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day40.css" type="text/css" />
+    </head>
+    <body>
+        <div id="myfilter" style="position:absolute;background-color:#000000;opacity:0.3;display:none"></div>
+        <div id="myrestartbutton" style="position:absolute;padding-top:75px;padding-left:120px;display:none;"><button onclick="restartGame()">Restart</button></div>
+        <div id="canvascontainer"></div>
+        <br>
+        <p style="text-align:center">
+            You can also use the arrow keys now to move the Sprite. To Initialize keys left-click the Game-area       
+        </p>
+        <p style="text-align:center">
+            <button ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+            <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+            <button ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+            <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+        </p>
+        <br>
+        <script type="text/javascript" src="day41.js"></script>
+    </body>
+</html>

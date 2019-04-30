@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <link href="animate.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="Images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="Images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="Images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="Images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="Images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="Images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="Images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+<link rel="stylesheet" href="style.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+    <body id="Aboutme">
+        <script>
+            AOS.init({
+                once:true
+            });
+        </script>
+<section>
+            <script>
+              function openSlideMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+              }
+              function closeSlideMenu(){
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+              }
+            </script>
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div id="content">
+                                <span class="slide">
+                                    <a href="#" onclick="openSlideMenu()">
+                                        <i class="fas fa-bars "></i>
+                                    </a>
+                                </span>
+                                <div id="menu" class="nav1">
+                                    <a href="#" class="close" onclick="closeSlideMenu()">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="index.html">Home</a>
+                                    <a href="Last_AboutMe.html">About Me</a>
+                                    <a href="resume.html">Resume</a>
+                                    <a href="Projects.html">Projects</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="360days.html">360 Day Challenge</a>
+                                    <a href="Photo Gallery.html">Photo Gallery</a>
+                                    <a href="Contact_me.html">Contact Me</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <h3 style="color:white;">
+                            Mukul's Engineering Portfolio
+                        </h3>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" style="color:white;">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p style="color:rgba(0,0,0,0)">
+                                ls
+                            <p>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ThePro11Coder" style="color:white;">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+            <script src="navbar.js"></script>
+        </section>
+        <div class="container title-part2">
+            <!--Title info-->
+            <h1 id="title"></h1>
+        </div>
+        <script>
+            var i = 0;
+            var txt = 'About Me'; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <section class="aboutme" style="padding-bottom: 10%; padding-top: 5%">
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class=="col-md-4">
+                            <img class="img-thumbnail" style="width:200px;height:200px;" src="Images/mukul2.png" data-aos="fade-up" data-aos-duration="1500" >
+                        </div>
+                        <div class="col-md-8">
+                            <p data-aos="fade-up" data-aos-duration="1500">There are many things a lot of us hope to accomplish in our lifetime. My life goals include going to a UC university, working for google, and my end goal is to start a company later on in life.  In order to achieve this I plan to try my hardest in school and do a lot of extra curricular to get me prepared for college. Doing this hopefully I could get into a UC and from there the rest follows. Yes, I am aware that it is still hard work to get into google and so forth. These are my career goals because they are prestigious positions many people would want to be in and I am one of those people.
+                            </p>
+                            <p data-aos="fade-up" data-aos-duration="1500">
+                                I am a very
+                                Independent person because I like to do things by myself which is a good thing because it is easy for me to self learn programming languages like Python, Java, Ruby, Javascript and so on. Being knowledgeable is also another asset that I can bring. I am fluent in many programming languages like Java, Python, C++, and C#. I possess a great deal of knowledge in other subjects which include Science, History and health. Many activities that I participate in after school include Gael Force academy which is a robotics club held after school, martial arts, and 4-H which is a club that does a lot of community service, and projects based on different subjects like programming. As I love to be independent the main thing that I learned from these activities that I attend is that teamwork and cooperation is important. I like things to be done my way but if I am in a team most people do not agree with my thinking so I have learned to be more opened minded thus allowing my teamwork skill to improve.
+                            </p>
+                            <p data-aos="fade-up" data-aos-duration="1500">
+                                I have so many strengths like being independent and knowledgeable but as I continue to pave my way into making my goals a reality there are things like teamwork I need to improve. Anyone that has come to visit my website I thank you for taking your time off for a bit to enjoy this lovely site. Please feel free to look at the other pages in this site.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mainfooter">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/>
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="CSSIndex.css" rel="stylesheet" type="text/css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <link rel="apple-touch-icon" sizes="57x57" href="Images/apple-icon-57x57.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+    <body id="Home">
+        <script>
+        AOS.init({
+            once:true
+        });
+      </script>
+<section>
+            <script>
+              function openSlideMenu(){
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+              }
+              function closeSlideMenu(){
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+              }
+            </script>
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div id="content">
+                                <span class="slide">
+                                    <a href="#" onclick="openSlideMenu()">
+                                        <i class="fas fa-bars "></i>
+                                    </a>
+                                </span>
+                                <div id="menu" class="nav1">
+                                    <a href="#" class="close" onclick="closeSlideMenu()">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="index.html">Home</a>
+                                    <a href="Last_AboutMe.html">About Me</a>
+                                    <a href="resume.html">Resume</a>
+                                    <a href="Projects.html">Projects</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="360days.html">360 Day Challenge</a>
+                                    <a href="Photo Gallery.html">Photo Gallery</a>
+                                    <a href="Contact_me.html">Contact Me</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <h3 style="color:white;">
+                            Mukul's Engineering Portfolio
+                        </h3>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" style="color:white;">
+                                <i class="fas fa-home fa-3x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p style="color:rgba(0,0,0,0)">
+                                ls
+                            <p>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ThePro11Coder" style="color:white;">
+                                <i class="fab fa-github fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+            <script src="navbar.js"></script>
+        </section>
+        <section class="container title-part2">
+            <h1 id="title">
+            </h1>
+        </section>
+        <script>
+            var i = 0;
+            var txt = "Welcome to Mukul's Engineering Portfolio"; /* The text */
+            var speed = 70; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <section class = "aboutme" style="background-color: #f2f2f2; padding-bottom: 10%; padding-top: 5%">
+        <script>
+
+        </script>
+        <div class="container" >
+            <h1 data-aos="fade-up" data-aos-duration="1500" style="text-align:center;font-family: 'Dosis', sans-serif;">
+                Avid Programmer and Student Software developer
+            </h1>
+            <br>
+            <p data-aos="fade-up" data-aos-duration="1500" class="big" style="text-align:center;font-family: 'Nanum Gothic', sans-serif;font-size:25px">
+                There are many things a lot of us hope to accomplish in our lifetime.
+                My life goals include going to a UC university, working for google, and
+                 my end goal is to start a company later on in life. In order to achieve this
+                 I plan to try my hardest in school and do a lot of extra curricular to get me prepared for
+                college. Doing this hopefully I could get into a UC and from there the rest follows. Yes,
+                 I am aware that it is still hard work to get into google and so forth. These are my career goals
+                 because they are prestigious positions many people would want to be in and I am one of those
+                 people.
+            </p>
+            <br>
+            <style>
+                a {
+                    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    display: block;
+                    margin: 20px auto;
+                    max-width: 180px;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    padding: 20px 30px;
+                }
+                a.button2 {
+                    color: rgba(30, 22, 54, 0.6);
+                    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+                }
+
+                a.button2:hover {
+                    color: rgba(255, 255, 255, 0.85);
+                    box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+                }
+
+            </style>
+            <p style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+  		        <a href="Last_AboutMe.html" class="button2" style="text-decoration: none;">More About Me</a>
+            </p>
+        </div>
+        </section>
+        <section style="background-color: white; padding-bottom:2%">
+        	<div class="container">
+                <br>
+                <h1 data-aos="fade-up" data-aos-duration="1500" style="text-align:center;color:black;font-size:50px;font-family: 'Dosis', sans-serif;">
+                    Resume
+                </h1>
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+                        <br>
+        				<div class="welcome_text">
+        					<h4 data-aos="fade-up" data-aos-duration="1500">About Myself</h4>
+        					<p data-aos="fade-up" data-aos-duration="1500">I am an avid coder who thrives to learn more about Technology. I have knowledge in Java, Python, HTML, CSS, Swift. I have interest in learning about Deep Learning and IBM Watson. I am currently working towards launching a couple of apps onto the Appstore.</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4 data-aos="fade-up" data-aos-duration="1500">8</h4>
+        								<p data-aos="fade-up" data-aos-duration="1500">Programming languages I program in</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4 data-aos="fade-up" data-aos-duration="1500">2</h4>
+        								<p data-aos="fade-up" data-aos-duration="1500">Total Engineering Projects done</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4 data-aos="fade-up" data-aos-duration="1500">100</h4>
+        								<p data-aos="fade-up" data-aos-duration="1500">Amount of hours I have done volunteering</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div data-aos="fade-up" data-aos-duration="1500" class="col-lg-6">
+        				<div class="tools_expert">
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>HTML5 <span class="counter">90</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Java <span class="counter">80</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Python<span class="counter">70</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Arduino <span class="counter">95</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Swift <span class="counter">75</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+                <br>
+                <p style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="resume.html" class="button2" style="text-decoration: none;">Full Resume</a>
+                </p>
+        	</div>
+        </section>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+        <section class = "p_120" style="background-color: #f2f2f2">
+            <div class = "container">
+                 <h1 data-aos="fade-up" data-aos-duration="1500" style="text-align:center;font-family: 'Dosis', sans-serif;">
+                    Projects
+                </h1>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1500"> <!--cards only take up half the screen regardless of amount of text-->
+                        <div class="card flex-sm-row">
+                            <div class="card-body">
+                                <strong>
+                                <h6>Projects</h6> <!--different parts of the card have different sizes for readability-->
+                                <h4>State Geography Quiz</h4>
+                                <h5>9/18/2018 - 10/11/2018</h5>
+                                 </strong>
+                                <p>The Objective of this project was to create an interactive capitals and states quiz for kids to study for their...</p>
+                                <a href="Appinventor.html"  class="btn btn-primary">Explore this project</a> <!--button linked to projects page-->
+                            </div>
+                            <img src="Images/Capture.PNG" class="card-img-right flex-sm-row" style='max-width:400px; max-height:250px'><!--images on cards
+                            have max on dimensions to prevent stretching-->
+                            <a href="Projects.html" class="stretched-link"></a>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card flex-sm-row"> <!--ensures the width is flexible on different sized screens-->
+                            <div class="card-body"> <!--main card content starts-->
+                                <strong>
+                                <h6>Projects</h6>
+                                <h4>Colorify</h4>
+                                <h5>3/1/2019 - 3/24/2019</h5>
+                                </strong>
+                                <p>The objective of this project was to create a program that could turn a family or memorable picture into...</p>
+                                <a href="Last_AboutMe.html" class="btn btn-primary">Explore my Bio</a> <!--small change, button instead of link-->
+                            </div>
+                            <img src="Images/IMGpy.png" class="card-img-center" style='width:200px; height:150px;'>
+                            <!--images on cards
+                            have max on dimensions to prevent stretching-->
+                            <a href="project3.html" class="stretched-link"></a>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
+                <a href="Projects.html" class="button2" style="text-decoration: none;">More Projects</a>
+            </p>
+        </section>
+        <footer class="mainfooter">
+            <div class="row">
+                <p class="col-sm-4s">&copy; 2019 Mukul Natarajan</p>
+                <div class="col-4">
+                    <a href="mailto:mukuln416@gmail.com">
+                        <img src="Images/email.png" style="max-width: 100px; margin-left: 20%; margin-top: -5%">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+                        <img src="Images/dublin.png" style="max-width: 100px; margin-left:40%; margin-top: -17%">
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://github.com/ThePro11Coder">
+                        <img src="Images/github.png" style="max-width: 100px; margin-left:60%; margin-top: -17%"/>
+                    </a>
+                </div>
+                <div class ="col-2">
+                    <a href="https://discord.gg/uJHsA5k">
+                        <img src="Images/Discord.png" style="max-width: 100px; margin-left:80%; margin-top: -17%"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

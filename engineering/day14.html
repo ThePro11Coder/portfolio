@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="alphabet.js"></script>
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <style>
+            canvas {
+                height:500px;
+                width:1000px;
+            }
+        </style>
+        <section>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                                                            <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+        <h1 style = "text-align:center;">
+            Welcome to Animate Your Name!!!
+        </h1>
+        <h3 style = "text-align:center;">
+            Type in Your Name and hover over the words and watch the Magic Happen
+        </h3>
+        <p style = "text-align:center;">
+            <input type="text" name="n_input" id="userInput" onkeyup="name_in();" maxlength="14"/></input>
+        </p>
+        <p style = "text-align:center;color:grey;">
+            14 characters is max 
+        </p>
+        <p style="text-align:center;">
+            <canvas id = "myCanvas" ></canvas>
+        </p>
+        <script type="text/javascript" src="bubbles.js"></script>
+        <script>
+            var red = [0,100,63]; // setting the colors here [] is RGB values:
+            var green = [75,100,40];
+            var blue = [197,77,55];
+            var yellow = [255,250,12];
+            
+            var color = [red, green, blue, yellow]; // array of all colors
+            drawName(name, color); // function drawName takes two paremeters
+            var name = "Mukul Is Cool"
+            function name_in(){
+                var name = String(document.getElementById("userInput").value);
+                drawName(name, color); // function drawName takes two paremeters
+            }
+            bounceBubbles(); // This function is what makes bubbles bounce when you hover over the Name  
+        </script>
+    </body>
+</html>

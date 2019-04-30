@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Doodle-ly Version 2.0</title>
+        <link rel="stylesheet" href="day25.css" type="text/css" />
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body style='margin:0' onload="clearCanvas()">
+        <div id='toolbar'>
+            <div id='rad'>
+                Pen Size - <span id='radVal'> 10</span>
+                <div id='decRad' class = 'radControl'>-</div>
+                <div id='incRad' class = 'radControl'>+</div>
+            </div>
+            <div id='colors'>
+            </div>
+            <div>
+                <p style="text-align:center;">
+                    <button onclick="clearCanvas()" name="Clear Drawing Space" value="Clear Canvas">
+                        <img src="Images/trash.png" width="35" height="35"></img>
+                    </button>
+                    <button name="download" value="download" onclick="download_now()">
+                        <a href="#" id="link">
+                            <img  src="Images/save.png" width="35" height="35"></img>
+                        </a>
+                    </button>
+                    Background - <input type="color" class="color" value="#FFFFF" id="background_Color"></input>
+                </p>
+            </div>
+        </div>
+        <canvas id='canvas' style="display: block;">Browser not supported</canvas>
+        <script type="text/javascript" src="day25.js"></script>
+        <section>  
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+    </body>
+</html>

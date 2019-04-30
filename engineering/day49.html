@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day49.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    </head>
+    <body>
+        <div class="laptop">
+        	<center>
+        		<div class="body">
+        			<div class="heading">
+        				<i class="fa fa-bullseye" style="color:gray"></i> .
+        			</div>
+        			<div class="content">
+        				<div class="display" id="display">
+        			</div>
+        			<center><i class="fa fa-windows"></i></center>
+        		</div>
+        	</center>
+        	<div class="keyboard-perspective">
+        		<div class="keyboard">
+        			<div class="buttons">
+        				<div class="right-key">
+        					<button id="power" onclick="onOff()"><i class="fa fa-power-off"></i></button>
+        				</div>
+        			</div>
+        			<div class="keypad"></div>
+        			<div class="touchpad" onmousemove="playAnimation()" onmouseout="pauseAnimation()">
+        				<button class="key"></button>
+        				<button class="key"></button>
+        			</div>
+        		</div>
+        
+        	</div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <script type="text/javascript" src="day49.js"></script>
+    </body>
+</html>

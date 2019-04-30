@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <script type="text/javascript" src="p5.js"></script>
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <style>
+            body{
+                overflow-x: hidden; 
+                overflow-y: scroll; 
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Last_AboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="360days.html">360 Day Challenge</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="Contact_me.html">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Photo Gallery.html">Photo Gallery</a>
+                    </li>
+                </ul>
+            </nav> 
+        </section>
+        <script>
+            let wMax = 1;
+            let c = 0.0;
+            let inc;
+            function setup(){
+                createCanvas(windowWidth,windowHeight);
+                inc = TWO_PI/70.0; //basically equaled to 0.25, used to move shape at certain speed
+            }
+
+            function draw(){
+                background(10); // sets background color
+                translate(width/2,height/2 - 430); 
+                stroke(255); // sets border color
+                strokeWeight(4);  //sets size of border
+                noFill(); // disables filling geometry
+                for(let i=2;i<=20;i++){ // for loop to iterate through distance to move the circles
+                    push(); // saves current graphical settings
+                    stroke("Yellow"); // sets color for lines
+                    push(); // saves current graphical settings
+                    noStroke(); //disables drawing an outline on current shape
+                    fill("Red"); // fills the set geometrical shape to Red
+                    ellipse((-1 * wMax),i*40,20); // creates an ellipse in negative axis
+                    pop(); //restores settings from push()
+                    translate(0,i*40); //specifies an amount to displace objects in the canvas in which 0, i*40 is the distance of displacement
+                    line((-1 * wMax),0,wMax,0); //creates a line based on set paremeters
+                    push(); // saves current settings up to here (the code w/paremeters)
+                    noStroke(); // disables outline in shape about to be drawn in new settings
+                    fill("Orange"); // fills color for new shape
+                    ellipse(wMax,0,20); // creates ellipse positive axis
+                    pop(); // releases previosuly saved settings
+                    pop(); // runs the saved settings again
+                    wMax = cos((c+i)/3) * 50; // helps shape go back and forth once
+                }
+                c+=inc; //increments c to inc to continue moving Helix forever
+            }
+        </script>
+    </body>
+</html>

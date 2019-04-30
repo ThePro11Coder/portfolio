@@ -1,0 +1,60 @@
+body{
+  background: #333;
+}
+div{
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: -15px;
+  box-shadow: 0px 0px 2px #444;
+  -webkit-animation: floating 2s ease-in, rotating .5s ease-in-out infinite;
+}
+
+.paper1{
+  background: #e83415;
+}
+.paper2{
+  background: GreenYellow;
+}
+.paper3{
+  background: #01dcf5;
+}
+.paper4{
+  background: yellow;
+}
+.paper5{
+  background: orange;
+}
+.paper6{
+  background: #11D;
+}
+.paper7{
+  background: Fuchsia;
+}
+
+@-webkit-keyframes floating{
+  from {top: -15px}
+  to {top: 100%}
+}
+@-keyframes floating{
+  from {top: 0px}
+  to {top: 1000px}
+}
+
+@-webkit-keyframes rotating{
+  0% {transform: rotateZ(0deg) rotateX(0deg);}
+  50% {transform: rotateZ(45deg) rotateX(180deg);}
+  100% {transform: rotateZ(0deg) rotateX(360deg);}
+}
+
+h1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    font-size: 100px;   
+    color: white;
+    transform: translate(-50%, -50%)
+}
