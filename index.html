@@ -3,6 +3,31 @@
         <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="bootstrap-4.1.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
+        <style>
+                 a {
+                    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    color:white;
+                    display: block;
+                    margin: 20px auto;
+                    max-width: 180px;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    padding: 20px 30px;
+                }
+                a.button2 {
+                    color: rgb(30, 22, 54,);
+                    box-shadow: rgb(30, 22, 54) 0 0px 0px 2px inset;
+                }
+
+                a.button2:hover {
+                    color: rgb(255, 255, 255);
+                    box-shadow: rgb(30, 22, 54) 0 80px 0px 2px inset;
+                }
+        </style>
     </head>
 
     <body id="home">
@@ -11,11 +36,29 @@
                 Mukul's Portfolio
             </h1>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <section class="container">
-            <p style="text-align:center;color:white;">
-  		        <a href="engineering/index.html" class="button2" style="text-decoration: none;">Engineering</a>
-  		        <a href="engineering/index.html" class="button2" style="text-decoration: none;">Engineering</a>
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="background-color:rgba(0,0,0,0);border:none;">
+                        <p style="text-align:center;">
+                            <a href="engineering/index.html" class="button2" style="text-decoration: none;">Engineering</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="background-color:rgba(0,0,0,0);border:none;">
+                        <p style="text-align:center;">
+                            <a href="#" class="button2" style="text-decoration: none;">Frosh Seminar</a>
+                        </p>
+                    </div>
+                </div>
+            </row>
         </section>
     </body>
 </html>
