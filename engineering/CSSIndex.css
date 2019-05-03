@@ -58,37 +58,6 @@
   line-height: 250%;
 }
 
-.text{
-  text-align: center;
-  font-size: 50px;
-  color: white;
-}
-
-.background-img3{
-  background-color:#e9ecef;
-  padding:0.0008% 0.0008%;
-}
-.background-img4{
-  background-color:white;
-  padding:0.0008% 0.0008%;
-}
-.about{
-  text-align: center
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:20px;
-}
-.center1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*Background*/
-
-/*Home-Page Title Styles*/
 .title-part{
   color: white;
   margin-top: 20%;
@@ -117,16 +86,7 @@
   color: white;
   text-align: center;
 }
-/*Home-Page Project Styles*/
-.projects-home{
-  margin-top: 20%;
-  background-color: #f2f2f2;
-  padding: 5%;
-}
-.card-title{
-  font-family: "Raleway", sans-serif;
-  font-style: italic;
-}
+
 .card-body{
   font-family: "Raleway", sans-serif;
 }
@@ -134,12 +94,7 @@
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
-.title-part-about{
-  color: white;
-  margin-top: 20%;
-  margin-left: 10%;
-  text-align: center;
-}
+
 .day30{
   color: white;
   margin-top: 20%;
@@ -148,108 +103,12 @@
   border-bottom-style: solid;
   font-family: "Open Sans Condensed", sans-serif;
 }
-.title-part-about{
-  font-size: 350%;
-  border-bottom-style: solid;
-  font-family: "Open Sans Condensed", sans-serif;
-}
+
 .card{
   margin-top: 5%;
 }
 .scratch{
   margin-top: 10%;
-}
-.bird{
-  margin-top: 6%;
-}
-/*About Me Page Styles*/
-.about-content{
-  background-color: #f2f2f2;
-  margin-top: 20%;
-  padding: 5%;
-}
-.about-content h1{
-  font-family: "Raleway", sans-serif;
-}
-.about-content p{
-  font-family: "Raleway", sans-serif;
-}
-.about{
-  font-size: 1.3em;
-}
-.subtitle{
-  font-style: italic;
-  color: gray;
-}
-/*Resume Styles*/
-.title-part-resume{
-  color: white;
-  margin-top: 20%;
-  margin-left: 10%;
-  text-align: center;
-}
-.title-part-resume h1{
-  font-size: 350%;
-  border-bottom-style: solid;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-.resume{
-  background-color: #f2f2f2;
-  padding: 10%;
-  margin-top: 20%;
-  line-height: 250%;
-}
-.resume h4{
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.resume li{
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
-}
-.resume p{
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
-}
-.resume h1{
-  font-family: "Raleway", sans-serif;
-  font-size: 3em;
-}
-/*Project Styles*/
-.title-part-projects{
-  color: white;
-  margin-top: 20%;
-  margin-left: 10%;
-  text-align: center;
-}
-.title-part-projects h1{
-  font-size: 350%;
-  border-bottom-style: solid;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-.content{
-  background-color: #f2f2f2;
-  padding: 5%;
-}
-.content h1{
-  font-family: "Raleway", sans-serif;
-  font-size: 3em;
-  margin-left: 8%;
-}
-/*Contact Styles*/
-.title-part-contact{
-  margin-top: 10%;
-  margin-left: 10%;
-  text-align: center;
-}
-.title-part-contact h1{
-  font-size: 350%;
-  border-bottom-style: solid;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-.contact-content{
-  font-family: "Raleway", sans-serif;
 }
 /*Footer Styles*/
 footer li img {
