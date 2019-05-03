@@ -1,0 +1,32 @@
+h3{margin:0;padding:0}
+div{margin:0;padding:0}
+#output {
+  border: 1px solid black;
+  background: black;
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#clickRed,#clickGreen,#clickBlue{
+  display:inline-block;
+  cursor: pointer;
+  margin: 25px;
+  font-size: 3em;
+  width: 75px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#clickRed {
+  background: #f00;
+}
+
+#clickGreen {
+  background: #0f0;
+}
+
+#clickBlue {
+  background: #00f;
+}
