@@ -1,0 +1,19 @@
+body {
+  height: 600px;
+  overflow-x: hidden;
+}
+.navbar{
+  background: blue;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  position: fixed;
+}
+h1 {
+  padding-top: 100px;
+}
+
+/* on scroll */
+.smallerNav {
+  padding: 10px !important;
+}

@@ -1,5 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Rocky Ahmed
+@URL: http://wethemez.com
+Author E-mail: rockybd1995@gmail.com
 
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Builder Construction
+@Author: Rocky Ahmed
+@Developed By: Rocky Ahmed
+@Developer URL: http://rocky.wethemez.com
+Author E-mail: rockybd1995@gmail.com
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ predefin
+03/ header
+04/ button
+05/ banner
+06/ breadcrumb
+07/ about
+08/ team
+09/ project
+10/ price
+11/ team
+12/ blog
+13/ video
+14/ features
+15/ career
+16/ contact
+17/ footer
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 .list {
   list-style: none;
   margin: 0px;
@@ -75,6 +119,10 @@ button:focus {
     color: #777777;
     margin-bottom: 0px; }
 
+/* End Main Title Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 .header_area {
   position: absolute;
   width: 100%;
@@ -239,6 +287,10 @@ button:focus {
       margin-top: -6px;
       right: 20px; }
 
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Home Banner Area css
+============================================================================================ */
 .home_banner_area {
   position: relative;
   z-index: 1;
@@ -362,6 +414,12 @@ button:focus {
       .banner_area .banner_inner .banner_content .page_link a:hover {
         color: #766dff; }
 
+/* End Home Banner Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Latest Blog Area css
+============================================================================================ */
 .latest_blog_inner {
   margin-bottom: -30px; }
 
@@ -388,7 +446,9 @@ button:focus {
   .l_blog_item:hover h4 {
     color: #766dff; }
 
-
+/* End Latest Blog Area css
+============================================================================================ */
+/*================= latest_blog_area css =============*/
 .single-recent-blog-post {
   margin-bottom: 30px; }
   .single-recent-blog-post .thumb {
@@ -470,6 +530,7 @@ button:focus {
     background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
     opacity: 0.851; }
 
+/*============ blog_left_sidebar css ==============*/
 .blog_item {
   margin-bottom: 40px; }
 
