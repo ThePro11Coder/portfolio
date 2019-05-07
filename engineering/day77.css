@@ -1,0 +1,102 @@
+:root {
+  --w: 300px;
+  --h: 300px;
+  --mainBackground: radial-gradient(ellipse at center, rgba(22,30,114,1) 0%,rgba(19,126,214,1) 50%,rgba(146,193,229,1) 100%);
+  --maxBorder: 6px solid rgba(255,255,255,0.4);
+  --maxShadow: 0 -5px 2px 2px rgba(255, 255, 255,.3);
+  --minShadow: 0 0 1px 1px rgba(255, 255, 255,.01);
+  --animDuration: 5s;
+}
+
+body {
+  overflow: hidden;
+}
+
+#app {
+  min-height: var(--h);
+  min-width: var(--w);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--mainBackground);
+}
+#app #picture {
+  width: var(--w);
+  height: var(--h);
+  overflow: hidden;
+}
+#app #picture .whirlpool {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+#app #picture .whirlpool .circle {
+  width: var(--w);
+  height: var(--h);
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  border-top: var(--maxBorder);
+  box-shadow: var(--maxShadow);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation-name: whirlpool;
+  animation-duration: var(--animDuration);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+#app #picture .whirlpool .circle:first-child {
+  animation-delay: 0s;
+}
+#app #picture .whirlpool .circle:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#app #picture .whirlpool .circle:nth-child(3) {
+  animation-delay: 1s;
+}
+#app #picture .whirlpool .circle:nth-child(4) {
+  animation-delay: 1.5s;
+}
+#app #picture .whirlpool .circle:nth-child(5) {
+  animation-delay: 2s;
+}
+#app #picture .whirlpool .circle:nth-child(6) {
+  animation-delay: 2.5s;
+}
+#app #picture .whirlpool .circle:nth-child(7) {
+  animation-delay: 3s;
+}
+
+@keyframes whirlpool {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotateZ(0) scale(3);
+    box-shadow: var(--maxShadow);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(0) scale(2);
+    box-shadow: var(--maxShadow);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(360) scale(1);
+    box-shadow: var(--maxShadow);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(360deg) scale(0.1);
+    box-shadow: var(--minShadow);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotateZ(0) scale(3);
+    box-shadow: var(--maxShadow);
+  }
+}
