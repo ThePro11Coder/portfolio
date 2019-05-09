@@ -1,0 +1,84 @@
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+#canvas {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	padding:0;
+	border: 1px solid red;
+
+}
+.pixel {
+	margin:0;
+	padding:0;
+	display: inline-block;
+	outline: 1px solid #444;
+	background-color: white;
+}
+
+#toolbar {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#toolbar .button {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin-top: 20px;
+	font-size: 35px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#toolbar .button.selected {
+	border: 3px solid black;
+}
+
+#toolbar input{
+	font-size: 20px;
+	text-align: center;
+}
+
+#colorpicker {
+	width: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#colorpicker div {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+
+#colorpicker div[data-color="red"] {
+	background-color: red;
+}
+
+#colorpicker div[data-color="blue"] {
+	background-color: blue;
+}
+#colorpicker div[data-color="green"] {
+	background-color: green;
+}
+#colorpicker div[data-color="cyan"] {
+	background-color: cyan;
+}
+#colorpicker div[data-color="magenta"] {
+	background-color: magenta;
+}
+#colorpicker div[data-color="yellow"] {
+	background-color: yellow;
+}
+
+#colorpicker div.selected {
+	border: 4px solid black;
+}
