@@ -1,0 +1,45 @@
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.doorgroup {
+  perspective: 200px;
+  perspective-origin: calc(100% - 53px);
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.doorway {
+  border: 3px solid #C65C5C;
+  height: 196px;
+  width: 96px;
+  overflow: hidden;
+}
+
+.nextwindow {
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  height: 200px;
+  width: 100px;
+}
+
+.door {
+  height: 200px;
+  width: 100px;
+  background: green;
+  font-size: 24px;
+  background-image: url('Images/door.png');
+  border-left: none;
+  transition: 600ms transform ease-in-out;
+  transform: rotateY(180deg);
+  transform-origin: left;
+}
+
+.door:hover {
+  transform: rotateY(340deg);
+}
