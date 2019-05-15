@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+          <style>
+          body {
+            background: green;
+          }
+          
+          .hourglass {
+            margin: 20px auto;
+            height: 200px;
+            width: 100px;
+            animation: flip 6s ease infinite;
+          }
+          
+          .top, .bottom {
+            background-color: rgba(239, 236, 202, 0.15);
+            background-image: linear-gradient(#EFECCA, #EFECCA);
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+          }
+          
+          .top {
+            background-position: 0 0;
+            animation: top-do 6s ease infinite;
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+          }
+          
+          .bottom {
+            background-position: 0 100px;
+            animation: bottom-do 6s ease infinite;
+            -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          }
+          .bottom:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            left: 49px;
+            background-image: linear-gradient(#EFECCA, transparent);
+          }
+          
+          @keyframes top-do {
+            95%, 100% {
+              background-position: 0 100px;
+            }
+          }
+          @keyframes bottom-do {
+            95%, 100% {
+              background-position: 0 0;
+            }
+          }
+          @keyframes flip {
+            0%, 95% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(180deg);
+            }
+          }
+        </style>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    </head>
+
+    <body>
+    
+      <div class='hourglass'>
+        <div class='top'></div>
+        <div class='bottom'></div>
+      </div>
+      
+      
+    
+    </body>
+
+</html>
