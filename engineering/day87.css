@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+#red {
+  background-color: #ed1a44;
+}
+
+#green {
+  background-color: #00ff87;
+}
+
+#blue {
+  background-color: #0090ff;
+}
+
+#white {
+  background-color: white;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4e298f;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  margin: 3rem 0;
+  color: white;
+}
+
+.wrapper-all {
+  background-color: #209948;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.wrapper-all .color-picker .colors {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.wrapper-all .wrapper-row {
+  margin: 0 1rem;
+  width: 100%;
+  border: 1px solid #333;
+  background-color: white;
+}
+.wrapper-all .wrapper-row .row {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper-all .wrapper-row .row:not(:last-child) {
+  border-bottom: 5px solid #333;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks {
+  height: inherit;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks:first-child {
+  width: 20%;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks:nth-child(2) {
+  width: 50%;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks:nth-child(3) {
+  width: 10%;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks:last-child {
+  width: 20%;
+}
+.wrapper-all .wrapper-row .row .wrapper-blocks:not(:last-child) {
+  border-right: 5px solid #333;
+}
+.wrapper-all .wrapper-row .row-1 {
+  height: 80px;
+}
+.wrapper-all .wrapper-row .row-2 {
+  height: 100px;
+}
+.wrapper-all .wrapper-row .row-3 {
+  height: 70px;
+}
+.wrapper-all .wrapper-row .row-4 {
+  height: 80px;
+}
