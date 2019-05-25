@@ -1,0 +1,55 @@
+body {
+  background: #4d4d4d;
+  top:25%;
+  position:fixed;
+  left:31%;
+  right:0;
+  bottom:0;
+}
+
+.wheel{
+  width: 200px;
+  height: 200px;
+  border-left: 9px solid #bada55;
+  border-right: 9px solid #f66f6f;
+  border-radius: 100%;
+  margin-left:10px;
+  float: left;
+}
+.wheel:hover, .wheel2:hover, .wheel3:hover
+{
+    animation: wheel 3s infinite; 
+}
+.wheel2 {
+ width: 200px;
+  height: 200px;
+  border-left: 9px solid #f66f6f ;
+  border-right: 9px solid #bada55;
+  border-radius: 100%;
+  float: left;
+  margin-left:-5%;
+  margin-top:3%;
+
+}
+.wheel3 {
+ width: 200px;
+  height: 200px;
+  border-left: 9px solid #bada55;
+  border-right: 9px solid #f66f6f;
+  border-radius: 100%;
+  float: left;
+  margin-left:-3%;
+
+}
+
+@keyframes wheel {
+  
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(720deg);
+  }
+}
+

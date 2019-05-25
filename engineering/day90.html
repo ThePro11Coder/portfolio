@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day90.css" type="text/css" />
+    </head>
+    <body class="balloons">
+        <h1 style="text-align:center;color:Black;font-size:200px" id="title">
+            
+        </h1>
+        <script>
+            var i = 0;
+            var txt = '3 Months'; /* The text */
+            var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            typeWriter()
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script> 
+        <script  src="day90.js"></script>
+    </body>
+</html>
