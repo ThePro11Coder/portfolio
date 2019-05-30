@@ -1,0 +1,1299 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.container .flag {
+  display: flex;
+  margin: auto;
+  background-color: red;
+  height: 418px;
+  width: 900px;
+  border: 1px solid black;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  overflow: hidden;
+}
+.container .flag .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: navy;
+  height: 222px;
+  width: 365px;
+  border: 1px solid navy;
+  position: absolute;
+  overflow: hidden;
+}
+.container .flag .stars .star:nth-child(1),
+.container .flag .stars .star:nth-child(3),
+.container .flag .stars .star:nth-child(5),
+.container .flag .stars .star:nth-child(7) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 600ms infinite alternate;
+          animation: Twinkle 600ms infinite alternate;
+}
+.container .flag .stars .star:nth-child(odd) {
+  background-color: white;
+  position: relative;
+  top: 18px;
+  left: -2px;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(215deg);
+          transform: rotate(215deg);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.container .flag .stars .star:nth-child(even) {
+  height: 15px;
+  width: 24px;
+  margin: 2px 0;
+  position: relative;
+}
+.container .flag .stars .star:nth-child(2),
+.container .flag .stars .star:nth-child(4),
+.container .flag .stars .star:nth-child(6),
+.container .flag .stars .star:nth-child(8) {
+  opacity: 0;
+}
+.container .flag .star:nth-child(10) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(11) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(12) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(13) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(14) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(15) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(16) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(17) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(18) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(19) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 650ms infinite alternate;
+          animation: Twinkle 650ms infinite alternate;
+}
+.container .flag .star:nth-child(19) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(20) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(21) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(22) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(23) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(24) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(25) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(26) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(27) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(28) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(29) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 700ms infinite alternate;
+          animation: Twinkle 700ms infinite alternate;
+}
+.container .flag .star:nth-child(29) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(30) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(31) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(32) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(33) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(34) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(35) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(36) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(37) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 750ms infinite alternate;
+          animation: Twinkle 750ms infinite alternate;
+}
+.container .flag .star:nth-child(37) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(38) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(39) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(40) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(41) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(42) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(43) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(44) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(45) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(46) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(47) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(48) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(49) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(50) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(51) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(52) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(53) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 800ms infinite alternate;
+          animation: Twinkle 800ms infinite alternate;
+}
+.container .flag .star:nth-child(53) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(54) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(55) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(56) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(57) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(58) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(59) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(60) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(61) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(62) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(63) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(64) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(65) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(66) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(67) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(68) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(69) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 850ms infinite alternate;
+          animation: Twinkle 850ms infinite alternate;
+}
+.container .flag .star:nth-child(69) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(70) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(71) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(72) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(73) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(74) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(75) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(76) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(77) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(78) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(79) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(80) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(81) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(82) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(83) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 900ms infinite alternate;
+          animation: Twinkle 900ms infinite alternate;
+}
+.container .flag .star:nth-child(83) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(84) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(85) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(86) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(87) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(88) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(89) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(90) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(91) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(92) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(93) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(94) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(95) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(96) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(97) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(98) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(99) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(100) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(101) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(102) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(103) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(104) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(105) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(106) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(107) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .star:nth-child(108) {
+  transition: all 1s ease;
+  -webkit-animation: Twinkle 950ms infinite alternate;
+          animation: Twinkle 950ms infinite alternate;
+}
+.container .flag .star:before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.container .flag .star:after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 4px solid white;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.container .flag .stripes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 100%;
+}
+.container .flag .stripes .stripe:nth-child(odd) {
+  height: 30px;
+  width: 100%;
+  background-color: red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.container .flag .stripes .stripe:nth-child(even) {
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+@-webkit-keyframes Twinkle {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Twinkle {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}

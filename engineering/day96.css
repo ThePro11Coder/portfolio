@@ -1,0 +1,26 @@
+body {
+  background: #bababa;
+}
+
+.stress {
+  font-family: Helvetica;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 80px;
+}
+
+.letter {
+  position: relative;
+  display: inline;
+  margin: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
