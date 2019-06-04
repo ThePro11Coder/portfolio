@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.title {
+  font-family: 'Roboto', sans--serif;
+  font-size: 20vh;
+  text-align: center;
+  color: orangered;
+}
+
+#numbers {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+
+.container {
+  display: flex;
+}
+
+.text--numbers {
+  font-family: 'Roboto', sans--serif;
+  font-weight: 1000;
+  font-size: 24vh;
+}
+
+#days, #hours, #minutes, #seconds {
+  text-align: center;
+  width: 30vh;
+  height: 30vh;
+  padding: 10px;
+  margin: 10px;
+  background-color: orangered;
+  border-radius: 4px;
+  font-family: 'Roboto', sans--serif;
+  font-size: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

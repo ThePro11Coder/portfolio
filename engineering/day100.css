@@ -1,0 +1,132 @@
+/* setting font size, color, and family */
+body {
+  background-color: #D7DEE4;
+  color: #2B3E49;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+}
+
+/* main container div centering other content */
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.words {
+  display: flex;
+}
+
+/* jumping letters */
+.jump {
+  animation-name: bounce;
+  animation-duration: 2.7s;
+  backface-visibility: visible !important;
+  animation-fill-mode: both;
+  animation-timing-dunction: linear;
+  animation-iteration-count: infinite;
+}
+
+/* sliding dot */
+.dot-container {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #76B3D8;
+  position: relative;
+  left: -180px;
+  top: -6px;
+  
+  animation-timing-dunction: linear;
+  animation-name: dot;
+  animation-duration: 2.7s;
+  backface-visibility: visible !important;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 900ms;
+}
+
+
+/* delaying each letter */
+.one {
+  animation-delay: 0ms;
+}
+
+.two {
+  animation-delay: 110ms;
+}
+
+.three {
+  animation-delay: 230ms;
+}
+
+.four {
+  animation-delay: 350ms;
+  margin-left: 20px;
+}
+
+.five {
+  animation-delay: 470ms;
+}
+
+.six {
+  animation-delay: 590ms;
+}
+
+.seven {
+  animation-delay: 710ms;
+}
+
+.eight {
+  animation-delay: 830ms;
+}
+
+.nine {
+  animation-delay: 950ms;
+}
+
+/* letters bouncing */
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  60% {
+    transform: translate(0, 0);
+    color: black;
+  }
+  
+  75% {
+    transform: translate(0, -75px) skew(-13deg);
+    color: #76B3D8;
+  }
+  
+  90%, 100% {
+    transform: translate(0, 0px);
+  }
+}
+
+
+/* dot moving */
+@keyframes dot {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  30% {
+    transform: translate(0, 0);
+  }
+  
+  85%, 86% {
+    transform: translate(370px, 0px);
+  }
+  
+  96%, 100% {
+    transform: translate(370px, -15px);
+  }
+}
+

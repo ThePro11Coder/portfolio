@@ -1,0 +1,77 @@
+.wrapper{
+  margin: 0 auto;
+  border-radius:20px;
+ background-color:gainsboro;
+ width:50%;
+  height:250px;
+  box-shadow:2px 3px 2px black;
+  display:grid;
+  
+  grid-template-columns:1fr 1fr 1fr;
+  margin-top:40px;
+  
+}
+.fa-heart{
+  color:crimson;
+  font-size:90px;
+  background-color:white;
+ display:none;
+  padding:60px;
+  opacity:0.8;
+}
+.sports_chart{
+  margin: 0 auto;
+  width:60%;
+  margin-top:40px;
+  height:200px;
+  background-color:crimson;
+  display:grid;
+  grid-template-columns:1fr;
+}
+.rap{
+
+width:0px;
+  height:40px;
+  background-color:white;
+
+  
+}
+.boxes{
+  margin:30px;
+}
+.warrior{
+  width:0px;
+  height:40px;
+  background-color:yellow;
+  position:relative;
+  top:70px;
+}
+
+h1{
+  font-family:'Righteous';
+  color: #27134c;
+  text-align:center;
+}
+#raptors{
+
+  margin:20px;
+  background-image:url('https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/1200px-Toronto_Raptors_logo.svg.png');
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+ 
+}
+#goldengate{
+  background-image:url('https://abovethelaw.com/uploads/2018/01/Golden-State-Warriors-Logo.png');
+  background-size:contain;
+  margin:20px;
+  background-repeat:no-repeat;
+}
+#vs{
+  font-family:'Rajdhani';
+  font-size:95px;
+  background-color:white;
+  text-align:center;
+ 
+  font-weight:bold;
+}
