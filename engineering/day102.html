@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day102.css" type="text/css" />
+    </head>
+    <body>
+        <div class="wrapper">
+          <span>Total bill amount :</span>
+          $ <input type="text" id="bill" class="amount-field"> <br>
+          <span>Tip Percentage:</span>
+          <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" class="range-style">
+          <span id="slideval">0%</span>
+          <h3>Tip to leave = 
+            <span id="tipamount" class="tip-amount">$0.00</span>
+          </h3>                                           
+        </div>
+        <script type="text/javascript" src="day102.js"></script>
+    </body>
+</html>
