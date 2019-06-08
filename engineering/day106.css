@@ -1,0 +1,51 @@
+body{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#leftbox{
+  width: 400px;
+  text-align: center;
+  float: right;
+}
+
+#input{
+  margin: auto;
+  border-spacing: 0;
+}
+
+#input td{
+  padding: 0;
+}
+
+#graph{
+  font-size: 1.2em;
+}
+
+#graph td{
+  padding: 0.15em;
+}
+
+#graph td{
+  text-align: left;
+  width: 30em;
+  max-width: 90vw;
+}
+
+.label{
+  text-align: right;
+}
+
+.bar{
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: #a5f;
+  padding-left: 0.25em;
+  color: black;
+  display: inline-block;
+}
+
+input, button{
+  font-size: 1em;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day106.css" type="text/css" />
+    </head>
+    <body>
+        <div id="leftbox">
+          <b>Edit graph</b>
+          <hr />
+          <table id="input"></table>
+          <hr />
+          <button onclick="add()">add item</button>&nbsp;&nbsp;<button onclick="remove()">remove item</button>
+          <hr />
+          <label>Title: <input oninput="document.getElementById('title').innerHTML=this.value" style="width:100%;" value="Favorite fruits of pupils in class A" /></label>
+          <hr />
+          <label>Units: <input oninput="cmesure(this)" style="width:100%;" value="&nbsp;pupils" /></label>
+        </div>
+        <b id="title">Favorite fruits of pupils in class A</b>
+        <hr />
+        <table id="graph">
+        </table>
+        <script type="text/javascript" src="day106.js"></script>
+    </body>
+</html>
