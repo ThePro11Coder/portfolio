@@ -1,0 +1,19 @@
+body {
+  background-color: #252830;
+  color: #eee;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+#convert-form {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#result {
+  margin-top: 3em;
+}
