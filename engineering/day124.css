@@ -1,0 +1,12 @@
+* {
+  font-family: segoe ui;
+}
+
+#fileDropBox {
+  width: 20em;
+  line-height: 10em;
+  border: 1px dashed gray;
+  text-align: center;
+  color: gray;
+  border-radius: 7px;
+}
