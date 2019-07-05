@@ -1,0 +1,134 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #040419, #010103, #040419);
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.earth_container {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  animation: slide_in .5s linear;
+}
+
+.earth {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url(https://i.postimg.cc/NGbF9qQR/earth-mapp.png);
+  background-size: cover;
+  box-shadow: -8px -8px 20px #000014 inset, 4px 4px 20px black;
+  animation: rotate 8s linear infinite;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0%;
+  }
+  
+  100% {
+    background-position: 229.4%;
+  }
+}
+
+@keyframes slide_in {
+  0% {
+    transform: scale(.4);
+  }
+  
+  90% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+.earth::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url(https://i.postimg.cc/tCxwTcnp/2k-mars.jpg);
+  background-size: cover;
+  box-shadow: -4px -4px 20px #000014 inset, 2px 2px 20px black;
+  border-radius: 50%;
+  
+  transform: rotate(0deg) translateX(120px) rotate(0deg);
+  
+  animation: mars 16s linear infinite;
+}
+
+@keyframes mars {
+  0% {
+    background-position: 0%;
+  }
+  
+  100% {
+    background-position: 200%;
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+.earth::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url(https://i.postimg.cc/RZvkDRqm/moon-texture.jpg);
+  background-size: cover;
+  box-shadow: -4px -4px 20px #000014 inset, 2px 2px 20px black;
+  border-radius: 50%;
+  
+  transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  
+  animation: moon 16s linear infinite;
+}
+
+@keyframes moon {
+  0% {
+    background-position: 0%;
+    transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  
+  45% {
+    box-shadow: -4px -4px 20px #000014 inset, 2px 2px 20px black;
+  }
+  
+  50% {
+    transform: rotate(360deg) translateX(-80px) rotate(-360deg);
+    box-shadow: -8px -8px 20px #000014 inset, 2px 2px 20px black;
+  }
+  
+  55% {
+    box-shadow: -4px -4px 20px #000014 inset, 2px 2px 20px black;
+  }
+  
+  100% {
+    background-position: 200%;
+    transform: rotate(720deg) translateX(-150px) rotate(-720deg);
+  }
+}
