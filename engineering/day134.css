@@ -1,0 +1,88 @@
+body {
+  background-color: white;
+  
+  text-align: center;
+}
+.contain {
+  margin-left: -7.5em;
+  
+  display: inline-block;
+  
+}
+.flag{
+  
+  width:15em;
+  
+  
+  position: absolute;
+  z-index: -1;  
+}
+.blue{
+  
+  height: 6.15em;
+  width: 6.2em;
+  background-color: blue;
+  display: inline-block;
+  margin-bottom: -3px;
+  margin-right: -3px;
+}
+.short {
+  display: inline-block;
+  margin-bottom: -3px;
+  margin-left: -2px;
+}
+.shortRed {
+  background-color: red;
+  width: 8.8em;
+  height: .9em;
+  
+  margin: auto;
+}
+.shortWhite {
+  background-color: white;
+  width: 8.8em;
+  height: .85em;
+  
+}
+.long {
+  
+  
+}
+.red {
+  background-color: red;
+  width: 15em;
+  height: .85em;
+  
+}
+
+.white {
+  background-color: white;
+  width: 15em;
+  height: .85em;
+}
+
+.stars {
+  text-align: center;
+  color: white;
+  height: 6.15em;
+    width: 6.15em;
+  margin-left: .125em;
+  margin-right: auto;
+  margin-top: -.5em;
+  margin-bottom: auto;
+  
+}
+p {
+  margin-bottom: -1.2em;
+  font-size: .7em;
+  letter-spacing: .31em;
+  
+  
+}
+.five {
+  
+}
+
+h1 {
+  font-family: 'Bilbo';
+}

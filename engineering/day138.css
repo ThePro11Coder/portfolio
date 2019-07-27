@@ -1,0 +1,76 @@
+.test{
+  width: 5000px;
+  height: 7000px;
+}
+.tp {
+  stroke-dasharray: 0 1000;
+  fill-opacity: 0;
+}
+
+.tp:nth-child(1){
+  -webkit-animation: dash 6s linear, opac 0.25s linear 1.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: dash 6s linear, opac 0.25s linear 1.1s;
+  animation-fill-mode: forwards;
+}
+
+.tp:nth-child(2){
+  -webkit-animation: dash 6s linear 1.5s, opac 0.25s linear 3.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: dash 6s linear 1.5s, opac 0.25s linear 3.1s;
+  animation-fill-mode: forwards;
+}
+.tp:nth-child(3){
+  -webkit-animation: dash 6s linear 3s, opac 0.25s linear 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation: dash 6s linear 3s, opac 0.25s linear 4s;
+  animation-fill-mode: forwards;
+}
+.tp:nth-child(4){
+  -webkit-animation: dash 6s linear 4s, opac 0.25s linear 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation: dash 6s linear 4s, opac 0.25s linear 5s;
+  animation-fill-mode: forwards;
+}
+.tp:nth-child(5){
+  -webkit-animation: dash 6s linear 4s, opac 0.25s linear 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation: dash 6s linear 4s, opac 0.25s linear 5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dasharray: 0 1000;
+  }
+  to {
+    stroke-dasharray: 1000 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dasharray: 0 1000;
+  }
+  to {
+    stroke-dasharray: 1000 0;
+  }
+}
+
+@-webkit-keyframes opac {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes opac {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}

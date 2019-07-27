@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Open-Sans", sans-serif;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+.star-rating {
+	border: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	font-size: 2em;
+	justify-content: auto;
+	text-align: center;
+	width: 5em;
+}
+
+.star-rating input {
+	display: none;
+}
+
+.star-rating label {
+	color: rgb(128, 128, 128);
+	cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+	color: rgb(255, 212, 59);
+}
+
+.star-rating :hover ~ label {
+	color: rgb(250, 176, 5);
+}
+
+body {
+	background-color: rgb(50, 50, 50);
+}
