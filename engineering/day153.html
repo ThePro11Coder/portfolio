@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="day153.css" type="text/css" />
+    </head>
+    <body>
+      <div class="center">
+        <h1>Color Maker</h1>
+        <div class="redBox container">
+          <input class="slider" id="red" type="range" min="0" max="255" value="0"/>
+          <input type="number" value="0" class="redinput" id="redInput" max="255" min="0"/>
+        </div>
+                      <br>
+        <div class="greenBox container">
+          <input class="slider" id="green" type="range" min="0" max="255" value="0"/>
+          <input type="number" value="0" class="greeninput" id="greenInput" max="255" min="0"/>
+        </div>
+                        <br>
+        <div class="blueBox container">
+          <input class="slider" id="blue" type="range" min="0" max="255" value="0"/>
+          <input type="number" value="0" class="blueinput" id="blueInput" max="255" min="0"/>
+        </div>
+        
+        <br>
+        <p class="hex">Click the box to find the hex value</p>
+        <p class="rgb">Click the box to find the rgb value</p>
+        <div id="colorBox"></div>
+        <br>
+        <button class="button btn-success">Create Random Color</button>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/32494584/jcanvas.min.js"></script>
+      <script type="text/javascript" src="day153.js"></script>
+    </body>
+</html>

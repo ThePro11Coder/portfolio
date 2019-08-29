@@ -1,0 +1,35 @@
+body{
+   background:black;
+}
+.container{
+   padding:70px;
+}
+.boxes{
+   border:5px solid green;
+   color:white;
+   padding:20px;
+   margin-top:30px;
+   font-size:1.5em;
+   transition:1s all;
+}
+.box-1:hover{
+   border-color:lightgreen;
+}
+.box-1:hover~.box-2{
+   border-color:blue;
+   color:skyblue;
+   outline:2px solid white;
+   box-shadow:0 0 15px 1px blue;
+}
+.box-1:hover~.box-3{
+   border-color:red;
+   color:pink;
+   outline:2px solid white;
+   box-shadow:0 0 15px 1px red;
+}
+.box-1:hover~.box-4{
+   border-color:gold;
+   color:lightyellow;
+   outline:2px solid white;
+   box-shadow:0 0 15px 1px yellow;
+}
